@@ -7,9 +7,11 @@ module dut (
   output wire y
 );
 
+
   // TODO: Implement AND gate
   // Hint: Use continuous assignment (assign) with the Boolean AND operator (&)
   
   assign y = a&b;
-  
+
+
 endmodule

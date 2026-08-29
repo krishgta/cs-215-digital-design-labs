@@ -45,9 +45,11 @@ module tb;
 
     
    $display("AND gate testing completed.");
+   
     
     
     $finish;
+
   end
 
 endmodule
