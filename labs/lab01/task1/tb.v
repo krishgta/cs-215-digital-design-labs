@@ -39,13 +39,16 @@ module tb;
 
 
     // test case 4 = 1 AND 1 = 1
+    
     a=1'b1; b=1'b1; #10;
     if (y!==1'b1) $display("FAIL: a=%b, b=%b | Expected y=1, got y=%b", a,b,y);
 
 
     
    $display("AND gate testing completed.");
-   
+
+  
+
     
     
     $finish;
