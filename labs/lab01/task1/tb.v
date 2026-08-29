@@ -25,11 +25,27 @@ module tb;
   initial begin
     $display("Starting AND gate testbench...");
 
-    // TODO: Write your test cases here
-    // Hint: Apply stimulus signals (a, b) and verify output (y) after a delay
-    // Example:
-    // a = 1'b0; b = 1'b0; #10;
-    // if (y !== 1'b0) $display("Error");
+    // test case 1 = 0 AND 0 = 0
+    a=1'b0; b=1'b0; #10;
+    if (y!==1'b0) $display("FAIL: a=%b, b=%b | Expected y=0, got y=%b", a,b,y);
+
+    // test case 2 = 0 AND 1 = 0
+    a=1'b0; b=1'b1; #10;
+    if (y!==1'b0) $display("FAIL: a=%b, b=%b | Expected y=0, got y=%b", a,b,y);
+
+     // test case 3 = 1 AND 0 = 0
+    a=1'b1; b=1'b0; #10;
+    if (y!==1'b0) $display("FAIL: a=%b, b=%b | Expected y=0, got y=%b", a,b,y);
+
+
+    // test case 4 = 1 AND 1 = 1
+    a=1'b1; b=1'b1; #10;
+    if (y!==1'b1) $display("FAIL: a=%b, b=%b | Expected y=1, got y=%b", a,b,y);
+
+
+    
+   $display("AND gate testing completed.");
+    
     
     $finish;
   end
