@@ -9,6 +9,8 @@ module dut (
   output wire q_bar
 );
 
+
+
   // Assign q_bar as the negation of q
   assign q_bar = ~q;
 
