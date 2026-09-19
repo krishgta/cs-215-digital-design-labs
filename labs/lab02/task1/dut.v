@@ -13,6 +13,7 @@ module dut (
 
   // Assign q_bar as the negation of q
   assign q_bar = ~q;
+  
 
   // TODO: Implement D Flip-Flop logic with synchronous reset
   // Hint: Use an always block sensitive to the rising edge of clk
