@@ -7,13 +7,15 @@ module dut (
   input  wire d,
   output reg  q,
   output wire q_bar
+
+  
 );
 
 
 
   // Assign q_bar as the negation of q
   assign q_bar = ~q;
-  
+
 
   // TODO: Implement D Flip-Flop logic with synchronous reset
   // Hint: Use an always block sensitive to the rising edge of clk
